@@ -1,0 +1,644 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #17206d;
+    /* Violet blue theme */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 10%;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+    height: 50px
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 120%;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #A9A9F5;
+    /* Light violet blue on hover */
+}
+
+.nav-links a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #A9A9F5;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.video {
+    width: 100%;
+    height: 65vh;
+    /* 40% of the viewport height */
+    overflow: hidden;
+    /* Ensures no overflow beyond set height */
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Keeps the aspect ratio and covers the container */
+
+}
+
+.main .content {
+    position: absolute;
+    top: 54%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    /* Centers the text */
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    /* Adjust the font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Adds a shadow for better readability */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content button {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 26px;
+    font-size: 50%;
+    border: 4px solid white;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.middle-one {
+    display: flex;
+    width: 80%;
+    margin-top: 8%;
+    margin-left: 10%;
+    gap: 4%
+}
+
+.middle-one .text {
+    width: 50%;
+
+}
+
+.middle-one img {
+    width: 46%;
+    height: 600px;
+    border-radius: 23px;
+    transition: transform 0.4s ease, border-radius 0.4s ease;
+    /* Add transition for smooth zoom and border-radius change */
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.middle-t img {
+    width: 50%;
+    height: 600px;
+    border-radius: 23px;
+    transition: transform 0.4s ease, border-radius 0.4s ease;
+    /* Add transition for smooth zoom and border-radius change */
+    border-radius: 24px;
+    /* border:3px solid red */
+    text-decoration: none;
+}
+
+a {
+    text-decoration: underline;
+    color: grey
+}
+
+.middle-one img:hover {
+    transform: scale(1.1);
+    /* Zooms the image by 10% */
+    border-radius: 50px;
+    /* Changes border-radius on hover */
+}
+
+.middle-t img:hover {
+    transform: scale(1.1);
+    /* Zooms the image by 10% */
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.middle-t {
+    display: flex;
+    width: 70%;
+    margin-left: 14%;
+    margin-top: 9%;
+    gap: 4%
+}
+
+.middle-t div,
+.middle-one .text {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 146%;
+}
+
+.middle-one button {
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+    font-size: 110%;
+    border: 2px solid rgb(108, 108, 173);
+    padding: 12px;
+    border-radius: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(108, 108, 173);
+    cursor: pointer;
+}
+
+.middle-one button:hover {
+    color: rgb(173, 173, 207)
+}
+
+.explore {
+    width: 70%;
+    margin-left: 14%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.exp1,
+.exp2 {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+}
+
+.exp1 div,
+.exp2 div {
+    background-color: transparent;
+    color: rgb(108, 108, 173);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 14px;
+    border-radius: 27px;
+    border: 3px solid rgb(108, 108, 173);
+    cursor: pointer;
+}
+
+.exp2 {
+    margin-left: 10%;
+}
+
+.exp1 div:hover,
+.exp2 div:hover {
+    color: rgb(173, 173, 207)
+}
+
+.explore h2 {
+    font-size: 280%;
+    /* color:rgb(60, 60, 170) */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.features {
+    display: flex;
+    margin-left: 10%;
+    width: 82%;
+    gap: 10%;
+    margin-top: 3%
+}
+
+.intro {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(46, 46, 71);
+    font-size: 140%;
+}
+
+.others {
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+    gap: 16%;
+    font-weight: bold;
+    font-size: 120%;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.others li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(173, 173, 207);
+    color: rgb(108, 108, 173);
+    width: 100%
+}
+
+.others li:hover {
+    color: rgb(173, 173, 207)
+}
+
+footer {
+    width:90%;
+    margin-left:5%;
+    /* background-color: rgb(62, 62, 133); */
+    display: flex;
+    flex-direction: row;
+    gap:6%;
+    border:4px solid transparent;
+    background-color:rgb(198, 198, 228);
+}
+footer div{
+    width: 38%
+}
+.first div {
+width:100%
+}
+.connect{
+    width:30%;
+    margin-left:15%
+}
+.connect i{
+    font-size: 30px;
+}
+.first{
+    padding:10px;
+    color:rgb(59, 59, 133);
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:100%;
+font-weight: bold;
+}
+.first button{
+    font-weight: bolder;
+    font-size: 110%;
+    padding:12px;
+    border-radius: 12px;
+    background-color: transparent;
+    border:2px solid rgb(66, 66, 141);
+    color:rgb(46, 46, 71);
+    width:60%;
+    cursor: pointer;
+}
+.first .about{
+    font-size: 130%;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+.first .about p:hover,.second p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.first button:hover{
+    color:white;
+    border:2px solid rgb(108, 108, 173)
+}
+.second{
+width:43%;
+font-size: 130%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(59, 59, 133);
+
+}
+.second h1,p{
+    cursor: pointer;
+}
+a{
+    color:rgb(59,58,112)
+}
+.third{
+    padding:12px;
+    
+font-size: 130%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(59, 59, 133);
+
+}
+
+.third p:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+.connect{
+    display: flex;
+    gap: 2%;
+margin-left:5%;
+margin-top:2%;
+background-color: rgb(109, 108, 158);
+width:89.2%;
+justify-content: center;
+align-items: center;
+padding:12px;
+}
+
+.connect i{
+    padding: 10px;
+border-radius:10px;
+font-size: 32px;
+color:white
+}
+
+.fa-brands:hover{
+    cursor: pointer;
+    color:white
+}
+.fa-youtube:hover{
+    background-color:rgb(202, 2, 2)
+}
+.fa-linkedin:hover{
+    background-color:rgb(7, 72, 94)
+}
+.fa-instagram:hover{
+    background-image: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4)
+}
+.fa-x-twitter:hover{
+    background-color: black;
+}
+.fa-facebook:hover{
+    background-color: #1877F2
+}
+.last{
+    display: flex;
+    gap:58px;
+background-color: rgb(173, 173, 207);
+width:89.42%;
+margin-left:5%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top:10px;
+font-weight: bold;
+padding:10px;
+color:rgb(39, 39, 75)
+}
+.last div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.copy{
+    width:20%;
+    margin-left:41%;
+background-color:rgb(173, 173, 207);
+margin-top:0.9%;
+display: flex;
+justify-content: center;
+align-items: center;
+color:rgb(39,39,73);
+font-weight: bolder;
+padding:12px;
+border-radius: 13px;
+cursor: pointer;
+}
+.symptoms{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:40%;
+    height:auto;
+    border-radius: 12px;
+    background-color: rgb(31, 31, 59);
+    display: none;
+}
+.symptoms input{
+/* width:70%; */
+margin-left:9%;
+margin-top:3%;
+padding:10px;
+font-weight: bold;
+border-radius: 12px;
+border:1px solid rgb(173, 173, 207);
+color:rgb(116, 116, 218)
+}
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-container input[type="text"] {
+    width: 130%;
+    padding: 10px 40px 10px 20px; /* Adjust padding to make room for the icon */
+    font-size: 16px;
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left:10%
+}
+
+.search-container svg {
+    position: absolute;
+    left: 130%  ; /* Position the icon inside the input field */
+    top: 60%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    fill: #888; /* Color of the icon */
+    cursor: pointer;
+}
+.symptoms .result{
+    color:white;
+    font-weight: bold;
+    display: flex;
+    margin-top:1%;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding:12px
+}
+.symptoms .cross{
+    margin-left:96%;font-size: 30px;color:white;
+    cursor: pointer;
+}
+.login{
+    width:40%;
+    height:auto;
+    position: absolute;
+    top:50%;
+    left:48%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(55, 55, 118);
+    border-radius: 23px;
+    
+}
+.log{
+    display: flex;
+    gap:10%;
+    /* background-color: rgb(90, 90, 141); */
+    width:30%;
+    justify-content: center;
+}
+
+.log div{
+border-radius: 12px;
+border:2px solid rgb(173, 173, 207);
+color:white;
+padding:10px;
+font-weight:bolder;
+cursor: pointer;
+min-width:100px;
+display: flex;
+justify-content: center;
+}
+.login h4{
+    font-size: 170%;
+    color:white
+}
+
+.logd {
+    background-color: rgb(173, 173, 207);
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer; 
+}
+
+.signd {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.logd.bg {
+    background-color: transparent;
+}
+
+.signd.bgadd {
+    background-color: rgb(173, 173, 207);
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:3%;
+}
+.login form input,.heading{
+    color:rgb(97, 97, 207);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:12px;
+    background-color: rgb(173,173,209);
+    border:none;
+    border-radius:8px;
+    border:1px solid grey;
+
+}
+.login ::placeholder{
+    color:white;
+    opacity: 0.8;
+}
+.login .heading{
+    background-color: transparent;
+    border:none;
+    color:rgb(54, 54, 127);
+    font-size: 20px;
+}
+/* .login {
+    display: none;
+} */
+ .login .cross{
+    color:white;
+    font-weight: bold;
+    font-size: 160%;
+    cursor: pointer;
+    margin-left:94%
+ }
+ .login button{
+    color:white;
+    background-color: rgb(116, 116, 218);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px;
+        border:2px solid rgb(109, 108, 158);
+        border-radius:6px;
+        cursor: pointer;
+ }
+ 
+.login{
+    display: none;
+ }
+ .login.disp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:70%;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border-radius: 10px; 
+}
+#login{
+    color:white;
+    font-weight: 400;
+    cursor: pointer;
+}
+.loginfo input{
+    display: none;
+}
+.loginfo input.disp{
+    display: block;
+    width:160%;
+    margin-left:-36%;
+    
+}
+.signin.disp{
+    display: block;
+}
+
+.loginbutton{
+    display: none;
+}
+.signinbutton {
+    display: block;
+}
+.signinbutton.disp{display: block;}
+.signin.disp{
+    display: none;
+}
